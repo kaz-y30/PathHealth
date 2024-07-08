@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    font-weight: normal;
+    color: #007bff;
+}
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo {
+    width: 250px;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px 40px 0px 0px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.hero {
+    background: url('../../asset/user/slider1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 300px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #65A8FB;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    stroke: none;
+
+}
+
+.cta-button:hover {
+    background-color: #4558F7;
+    stroke: none;
+
+}
+button {
+    background-color: #65A8FB;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    stroke: none;
+}
+
+button:hover {
+    background-color: #4558F7;
+    stroke: none;
+
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.test{
+    display: flex;
+}
+
+.test-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.test-intro h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.test-intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+
+.page {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.page.active {
+    display: block;
+}
+
+.page .navbar {
+    padding: 20px;
+    width: 20%;
+    height: 100vh;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    overflow-y: auto;
+}
+.menu h1{
+    font-weight: bold;
+}
+
+.page .navbar .menu {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 15px 5px 15px;
+}
+
+.page .navbar .logo img {
+    width: 30%;
+    height: 50%;
+}
+
+.page .navbar .dashboard {
+    padding: 15px;
+}
+
+.page .navbar .dashboard a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.page .navbar i {
+    padding-right: 5px;
+}
+
+.page .navbar .daftarPsikolog {
+    padding: 15px;
+}
+
+.page .navbar .daftarPsikolog a {
+    text-decoration: none;
+}
+
+.page .navbar .jadwal {
+    padding: 15px;
+}
+
+.page .navbar .jadwal a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.page .navbar .laporan {
+    padding: 15px;
+}
+
+.page .navbar .laporan a {
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.page .main {
+    margin-left: 20%;
+    width: 80%;
+    height: 700px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.page .main .container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 20%;
+    background: white;
+    z-index: 2;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.page .main .container .profil {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.page .main .container .profil .user {
+    width: 93%;
+    margin-inline: auto;
+}
+
+.page .main .menu {
+    margin-top: 30px; /* To avoid overlap with the fixed container */
+}
+
+.page .main .menu h1 {
+    padding-left: 25px;
+}
+
+.page .main .menu p {
+    padding-left: 25px;
+}
+
+.page .main .menu .summary1 {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.chatbot {
+    flex: 1;
+}
+
+#chatbox {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#chatForm {
+    margin-top: 10px;
+}
+
+#chatForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#chatForm input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatForm button {
+    width: 80px;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chatbox p {
+    margin: 5px 0;
+    white-space: pre-wrap; /* Untuk memastikan teks panjang pindah ke bawah */
+    word-wrap: break-word; /* Untuk memastikan teks panjang pindah ke bawah */
+}
+
+
+/* Adjustments for the chatbot conversation */
+#chatbox p strong {
+    color: #007bff;
+}
+
+#chatbox p strong:after {
+    content: ":";
+}
+
+#chatbox p strong:first-child:after {
+    content: "";
+}
+
+#message {
+    margin-bottom: 10px;
+}
+
+/* Container utama */
+.questions {
+    width: 80%; /* Mengatur lebar container, bisa disesuaikan */
+    margin: 0 auto; /* Memusatkan container secara horizontal */
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Agar label-label sejajar secara horizontal */
+    justify-content: center; /* Memusatkan item secara horizontal di dalam flex container */
+    align-items: center; /* Memusatkan item secara vertikal di dalam flex container */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Container untuk nomor */
+.questions .nomor {
+    display: flex;
+    flex-direction: row; /* Agar label-label sejajar secara horizontal */
+    justify-content: space-around; /* Memberi jarak yang sama di antara label */
+    align-items: center; /* Memusatkan item secara vertikal di dalam flex container */
+    width: 100%;
+    max-width: 600px; /* Batas maksimum lebar, bisa disesuaikan */
+    margin: 0 auto; /* Memusatkan container secara horizontal */
+}
+
+/* Margin bawah untuk tiap pertanyaan */
+.question {
+    margin-bottom: 70px;
+    margin-top: 10px;
+    
+}
+.question hr{
+    margin-top: 70px;
+}
+
+/* Styling untuk judul pertanyaan */
+.question h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk label */
+.question label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    margin-right: 10px; /* Memberi jarak antara label-label */
+}
+
+/* Margin untuk radio button */
+.question input[type="radio"] {
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* Menargetkan radio button di posisi pertama dan terakhir */
+.nomor label:first-child input[type="radio"],
+.nomor label:last-child input[type="radio"] {
+    transform: scale(3.7); /* Membesarkan radio button */
+}
+
+/* Menargetkan radio button di posisi kedua dan kedua dari terakhir */
+.nomor label:nth-child(2) input[type="radio"],
+.nomor label:nth-child(4) input[type="radio"] {
+    transform: scale(3); /* Membesarkan radio button sedikit */
+}
+
+/* Menargetkan radio button di posisi tengah */
+.nomor label:nth-child(3) input[type="radio"] {
+    transform: scale(2.5); /* Mengatur ukuran radio button */
+}
+
+.submit-button {
+    background-color: #65A8FB;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #4558F7;
+}
+
+
+

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color: #007bff;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.page .navbar {
+
+    padding: 20px;
+    width: 20%;
+    height: 100vh;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    overflow-y: auto;
+}
+/* Hover Effects */
+
+.dashboard:hover, .daftarPsikolog:hover, .jadwal:hover, .laporan:hover{
+    background-color: #65A8FB;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page .navbar .menu {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 15px 5px 15px;
+}
+
+.page .navbar .logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.page .navbar .dashboard {
+    padding: 15px;
+}
+
+.page .navbar .dashboard a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.page .navbar i {
+    padding-right: 5px;
+}
+
+.page .navbar .daftarPsikolog {
+    padding: 15px;
+}
+
+.page .navbar .daftarPsikolog a {
+    text-decoration: none;
+}
+
+.page .navbar .jadwal {
+    padding: 15px;
+}
+
+.page .navbar .jadwal a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.page .navbar .laporan {
+    padding: 15px;
+}
+
+.page .navbar .laporan a {
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.page .main {
+    margin-left: 20%;
+    width: 80%;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ECEDEE;
+}
+
+.page .main .container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 20%;
+    background: white;
+    z-index: 2;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.page .main .container .profil {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.page .main .container .profil .user {
+    width: 93%;
+    margin-inline: auto;
+}
+
+.page .main .menu {
+    margin-top: 30px; /* To avoid overlap with the fixed container */
+}
+
+.page .main .menu h1 {
+    padding-left: 25px;
+}
+
+.page .main .menu p {
+    padding-left: 25px;
+}
+
+.page .main .menu .box{
+    margin-top: 20px;
+    display: grid;
+    width: 95%;
+    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    row-gap: 10px;
+}
+
+.page .main .menu .box .box-barang{
+    border-radius: 10px;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    color: black;
+    transition: all 0.3 ease;
+}
+
+.page .main .menu .box .box-barang:hover{
+    transform: translateY(-20px);
+}
+
+.page .main .menu .box .box-barang img{
+    width: 100%;
+    height: 180px;
+    background-color: #d7d9d8;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.page .main .menu .box .box-barang .info{
+    text-align: center;
+    align-items: center;
+}
+
+.page .main .menu .box .box-barang .text1 {
+    margin-bottom: 10px;
+}
+
+.page .main .menu .box .box-barang .deskripsi{
+    font-size: 15px;
+}
+
+.page .main .menu .box .box-barang .deskripsi p{
+    color: black;
+    text-decoration: none;
+    text-align: justify;
+    padding: 5px;
+}
+
+.page .main .menu .box .box-barang .text p{
+    color: black;
+}
+
+.page .main .menu .box .box-barang button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+.page .main .menu .box .box-barang button:hover{
+    background-color: #4B75F8;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+.pagination a:hover {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
